@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   tf
   osa_msgs
+  osa_common
   visualization_msgs
   sensor_msgs
   message_generation
@@ -68,7 +69,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES osa_control
- CATKIN_DEPENDS rosbag roscpp roslib std_msgs tf osa_msgs visualization_msgs
+ CATKIN_DEPENDS rosbag roscpp roslib std_msgs tf osa_msgs osa_common visualization_msgs
  DEPENDS Eigen
 )
 
@@ -90,7 +91,7 @@ include_directories(/usr/include/eigen3)
 # )
 
 ## Declare a cpp executable
-#add_executable(osa_xbox_joy_conductor src/xbox_joy_conductor.cpp)
+add_executable(osa_joy_conductor src/joy_conductor.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
@@ -98,7 +99,7 @@ include_directories(/usr/include/eigen3)
 # add_dependencies(example4 osa_control_gencfg)		#TODO
 
 ## Specify libraries to link a library or executable target against
-#target_link_libraries(osa_xbox_joy_conductor ${catkin_LIBRARIES} ${Eigen_INCLUDE_DIRS})
+target_link_libraries(osa_joy_conductor ${catkin_LIBRARIES} ${Eigen_INCLUDE_DIRS})
 
 #############
 ## Install ##
