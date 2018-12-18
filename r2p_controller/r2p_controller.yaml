@@ -1,0 +1,3 @@
+r2p_controller_name:
+  type: r2p_controller/R2PControllerClass
+  joint_name: elbow_pitch_joint

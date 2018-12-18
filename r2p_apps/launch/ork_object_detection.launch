@@ -1,0 +1,6 @@
+<launch>
+
+	<node name="osa_ork_object_detection" pkg="object_recognition_core" type="detection" args="-c $(find r2p_apps)/config/detection.ros.ork">
+	</node>
+
+</launch>
