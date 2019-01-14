@@ -2,7 +2,7 @@
   <!-- set parameter on Parameter Server -->
   <arg name="model" />
   <param name="robot_description"
-    command="$(find xacro)/xacro --inorder '$(find r2p_description)/urdf/$(arg model)'" />
+    command="$(find xacro)/xacro --inorder '$(find r2p_description)/urdf/$(arg model).xacro'" />
 
   <!-- send joint values from gui -->
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">

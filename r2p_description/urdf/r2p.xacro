@@ -11,6 +11,8 @@
   <xacro:include filename="$(find r2p_sea_arm_description)/urdf/r2p_sea_arm_right.xacro" />  
       
   <!-- Link both arms on a tripod -->
+  <xacro:include filename="$(find r2p_simple_hand_description)/urdf/r2p_simple_hand_right.xacro" /> 
+
   <!-- Tripod Link -->
   <link name="tripod_link">
     <visual>
@@ -75,6 +77,13 @@
     <parent link="tripod_link"/>
     <child link="right_arm_link"/>
     <origin xyz="-0.0165 -0.09 0.9" rpy="0 0 ${22*pi/180}"/>
+  </joint>
+
+  <!-- Fix the simple hand to the arm -->
+  <joint name="right_elbow_simple_hand_hook_fixed" type="fixed">
+    <parent link="right_elbow_link"/>
+    <child link="right_simple_hand_hook_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
   </joint>
 
   <!-- Fix the tripod on the base -->
