@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: r2p_description
+    relative_path: urdf/r2p.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/r2p.srdf
+  CONFIG:
+    author_name: Cyril Jourdan
+    author_email: cyril.jourdan@therobotstudio.com
+    generated_timestamp: 1549900461

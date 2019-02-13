@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(r2p_apps)
 
+add_compile_options(-std=c++11)
+
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
@@ -17,10 +19,17 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   message_generation
   dynamic_reconfigure
+  moveit_core
+  moveit_visual_tools
+  moveit_ros_planning
+  moveit_ros_planning_interface
+  geometric_shapes
+  tf2_geometry_msgs
+  trajectory_msgs
 )
 
 ## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+find_package(Boost REQUIRED COMPONENTS system filesystem date_time thread)
 #find_package(Eigen REQUIRED)
 
 
@@ -92,6 +101,8 @@ include_directories(/usr/include/eigen3)
 
 ## Declare a cpp executable
 add_executable(osa_joy_conductor src/joy_conductor.cpp)
+add_executable(osa_arm_controller src/arm_controller.cpp)
+add_executable(osa_pick_place src/pick_place.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
@@ -100,6 +111,8 @@ add_executable(osa_joy_conductor src/joy_conductor.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(osa_joy_conductor ${catkin_LIBRARIES} ${Eigen_INCLUDE_DIRS})
+target_link_libraries(osa_arm_controller ${catkin_LIBRARIES} ${Eigen_INCLUDE_DIRS})
+target_link_libraries(osa_pick_place ${catkin_LIBRARIES} ${Eigen_INCLUDE_DIRS} ${Boost_LIBRARIES})
 
 #############
 ## Install ##

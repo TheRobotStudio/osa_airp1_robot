@@ -1,0 +1,10 @@
+controller_list:
+  - name: fake_sea_arm_controller
+    joints:
+      - right_arm_shoulder_pitch_joint
+      - right_shoulder_pitch_shoulder_yaw_joint
+      - right_shoulder_yaw_upper_arm_joint
+      - right_upper_arm_elbow_joint
+  - name: fake_simple_hand_controller
+    joints:
+      - right_meta_thumb_prox_joint

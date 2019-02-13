@@ -7,7 +7,6 @@ Panels:
         - /Global Options1
         - /Status1
         - /TF1
-        - /TF1/Status1
         - /TF1/Frames1
         - /PointCloud21
         - /PointCloud22
@@ -32,7 +31,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: PointCloud2
+    SyncSource: ""
 Visualization Manager:
   Class: ""
   Displays:
@@ -74,6 +73,11 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         left_omniwheel_link:
           Alpha: 1
           Show Axes: false
@@ -85,6 +89,76 @@ Visualization Manager:
           Show Trail: false
           Value: true
         right_elbow_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger1_dist_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger1_mid_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger1_prox_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger2_dist_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger2_mid_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger2_prox_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger3_dist_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger3_mid_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger3_prox_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger4_dist_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger4_mid_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_finger4_prox_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_forearm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_meta_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -104,12 +178,27 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        right_upper_arm_link:
+        right_simple_hand_hook_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        rs_cam_base_link:
+        right_thumb_dist_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_thumb_mid_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_thumb_prox_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_upper_arm_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -139,89 +228,57 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
-        camera_base_aligned_depth_to_color_frame:
-          Value: false
-        camera_base_aligned_depth_to_infra1_frame:
-          Value: false
-        camera_base_aligned_depth_to_infra2_frame:
-          Value: false
-        camera_base_color_frame:
-          Value: false
-        camera_base_color_optical_frame:
-          Value: false
-        camera_base_depth_frame:
-          Value: false
-        camera_base_depth_optical_frame:
-          Value: false
-        camera_base_infra1_frame:
-          Value: false
-        camera_base_infra1_optical_frame:
-          Value: false
-        camera_base_infra2_frame:
-          Value: false
-        camera_base_infra2_optical_frame:
-          Value: false
-        camera_base_link:
-          Value: false
+        camera_link:
+          Value: true
         left_omniwheel_link:
           Value: false
         right_arm_link:
           Value: false
         right_elbow_link:
           Value: false
+        right_finger1_dist_link:
+          Value: true
+        right_finger1_mid_link:
+          Value: true
+        right_finger1_prox_link:
+          Value: true
+        right_finger2_dist_link:
+          Value: true
+        right_finger2_mid_link:
+          Value: true
+        right_finger2_prox_link:
+          Value: true
+        right_finger3_dist_link:
+          Value: true
+        right_finger3_mid_link:
+          Value: true
+        right_finger3_prox_link:
+          Value: true
+        right_finger4_dist_link:
+          Value: true
+        right_finger4_mid_link:
+          Value: true
+        right_finger4_prox_link:
+          Value: true
+        right_forearm_link:
+          Value: true
+        right_meta_link:
+          Value: true
         right_omniwheel_link:
           Value: false
         right_shoulder_pitch_link:
-          Value: false
+          Value: true
         right_shoulder_yaw_link:
           Value: false
+        right_simple_hand_hook_link:
+          Value: true
+        right_thumb_dist_link:
+          Value: true
+        right_thumb_mid_link:
+          Value: true
+        right_thumb_prox_link:
+          Value: true
         right_upper_arm_link:
-          Value: false
-        rs_cam_base_aligned_depth_to_color_frame:
-          Value: false
-        rs_cam_base_aligned_depth_to_infra1_frame:
-          Value: false
-        rs_cam_base_aligned_depth_to_infra2_frame:
-          Value: false
-        rs_cam_base_color_frame:
-          Value: false
-        rs_cam_base_color_optical_frame:
-          Value: false
-        rs_cam_base_depth_frame:
-          Value: false
-        rs_cam_base_depth_optical_frame:
-          Value: false
-        rs_cam_base_infra1_frame:
-          Value: false
-        rs_cam_base_infra1_optical_frame:
-          Value: false
-        rs_cam_base_infra2_frame:
-          Value: false
-        rs_cam_base_infra2_optical_frame:
-          Value: false
-        rs_cam_base_link:
-          Value: true
-        rs_cam_tripod_aligned_depth_to_color_frame:
-          Value: false
-        rs_cam_tripod_aligned_depth_to_infra1_frame:
-          Value: false
-        rs_cam_tripod_aligned_depth_to_infra2_frame:
-          Value: false
-        rs_cam_tripod_color_frame:
-          Value: false
-        rs_cam_tripod_color_optical_frame:
-          Value: false
-        rs_cam_tripod_depth_frame:
-          Value: false
-        rs_cam_tripod_depth_optical_frame:
-          Value: true
-        rs_cam_tripod_infra1_frame:
-          Value: false
-        rs_cam_tripod_infra1_optical_frame:
-          Value: false
-        rs_cam_tripod_infra2_frame:
-          Value: false
-        rs_cam_tripod_infra2_optical_frame:
           Value: false
         rs_cam_tripod_link:
           Value: true
@@ -236,55 +293,43 @@ Visualization Manager:
         base_link:
           back_omniwheel_link:
             {}
+          camera_link:
+            {}
           left_omniwheel_link:
             {}
           right_omniwheel_link:
             {}
-          rs_cam_base_link:
-            rs_cam_base_aligned_depth_to_color_frame:
-              rs_cam_base_color_optical_frame:
-                {}
-            rs_cam_base_aligned_depth_to_infra1_frame:
-              rs_cam_base_infra1_optical_frame:
-                {}
-            rs_cam_base_aligned_depth_to_infra2_frame:
-              rs_cam_base_infra2_optical_frame:
-                {}
-            rs_cam_base_color_frame:
-              {}
-            rs_cam_base_depth_frame:
-              rs_cam_base_depth_optical_frame:
-                {}
-            rs_cam_base_infra1_frame:
-              {}
-            rs_cam_base_infra2_frame:
-              {}
           tripod_link:
             right_arm_link:
               right_shoulder_pitch_link:
                 right_shoulder_yaw_link:
                   right_upper_arm_link:
                     right_elbow_link:
-                      {}
+                      right_simple_hand_hook_link:
+                        right_forearm_link:
+                          right_meta_link:
+                            right_finger1_prox_link:
+                              right_finger1_mid_link:
+                                right_finger1_dist_link:
+                                  {}
+                            right_finger2_prox_link:
+                              right_finger2_mid_link:
+                                right_finger2_dist_link:
+                                  {}
+                            right_finger3_prox_link:
+                              right_finger3_mid_link:
+                                right_finger3_dist_link:
+                                  {}
+                            right_finger4_prox_link:
+                              right_finger4_mid_link:
+                                right_finger4_dist_link:
+                                  {}
+                            right_thumb_prox_link:
+                              right_thumb_mid_link:
+                                right_thumb_dist_link:
+                                  {}
             rs_cam_tripod_link:
-              rs_cam_tripod_aligned_depth_to_color_frame:
-                rs_cam_tripod_color_optical_frame:
-                  {}
-              rs_cam_tripod_aligned_depth_to_infra1_frame:
-                rs_cam_tripod_infra1_optical_frame:
-                  {}
-              rs_cam_tripod_aligned_depth_to_infra2_frame:
-                rs_cam_tripod_infra2_optical_frame:
-                  {}
-              rs_cam_tripod_color_frame:
-                {}
-              rs_cam_tripod_depth_frame:
-                rs_cam_tripod_depth_optical_frame:
-                  {}
-              rs_cam_tripod_infra1_frame:
-                {}
-              rs_cam_tripod_infra2_frame:
-                {}
+              {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -380,25 +425,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.88363528
+      Distance: 1.79863012
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 1.13065577
-        Y: -0.057210274
-        Z: 0.254434973
+        X: 0.0986621305
+        Y: 0.0444949269
+        Z: 0.74789381
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.684796631
+      Pitch: 0.284797043
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.93688583
+      Yaw: 0.463692725
     Saved: ~
 Window Geometry:
   Displays:
