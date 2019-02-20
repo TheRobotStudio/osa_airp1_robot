@@ -18,14 +18,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-	    <mesh filename="package://r2p_description/meshes/visual/tripod_link.dae"/>
+	    <mesh filename="package://r2p_description/meshes/visual/tripod_link_80.dae"/>
       </geometry>
     </visual>
 
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-	    <mesh filename="package://r2p_description/meshes/collision/tripod_link_collision.stl"/>
+	    <mesh filename="package://r2p_description/meshes/collision/tripod_link_80_collision.stl"/>
       </geometry>
     </collision>
 
@@ -76,7 +76,7 @@
   <joint name="tripod_right_arm_fixed" type="fixed">
     <parent link="tripod_link"/>
     <child link="right_arm_link"/>
-    <origin xyz="-0.0165 -0.09 0.9" rpy="0 0 ${22*pi/180}"/>
+    <origin xyz="-0.0165 -0.09 0.8" rpy="0 0 ${22*pi/180}"/>
   </joint>
 
   <!-- Fix the simple hand to the arm -->
@@ -90,7 +90,7 @@
   <joint name="base_tripod_fixed" type="fixed">
     <parent link="base_link"/>
     <child link="tripod_link"/>
-    <origin xyz="0 0 0.13" rpy="0 0 0"/>
+    <origin xyz="0 0 0.15" rpy="0 0 0"/>
   </joint>
 
 </robot>
