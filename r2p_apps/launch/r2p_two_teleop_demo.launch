@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+
+	<include file="$(find r2p_foldy_base_apps)/launch/r2p_foldy_base_demo.launch"/>	
+	<include file="$(find r2p_sea_arm_apps)/launch/r2p_sea_arm_two_joy_demo.launch"/>
+
+</launch>
