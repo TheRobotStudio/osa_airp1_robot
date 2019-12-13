@@ -1,0 +1,7 @@
+<library path="lib/libairp1_controller_lib">
+	<class name="airp1_controller/R2PControllerClass"
+				 type="airp1_controller::R2PControllerClass"
+				 base_class_type="controller_interface::ControllerBase" />
+</library>
+
+

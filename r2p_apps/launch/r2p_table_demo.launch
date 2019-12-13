@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-
-<launch>
-
-	<include file="$(find r2p_sea_arm_apps)/launch/r2p_sea_arm_table_demo.launch"/>
-
-</launch>

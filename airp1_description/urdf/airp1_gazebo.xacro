@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- Robot Reference Platform for Prototyping - version 01 -->
+<robot name="airp1_gazebo" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Constants -->
+      
+  <!-- Import the SEA Arm 01 -->
+  <xacro:include filename="$(find airp1_description)/urdf/airp1.xacro" />
+      
+  <!-- Used for fixing airp1 frame to Gazebo world frame -->
+  <link name="world"/>
+
+  <joint name="world_arm_fixed" type="fixed">
+    <parent link="world"/>
+    <child link="arm_link"/>
+    <origin xyz="0 0 1.5" rpy="0 0 0"/>
+  </joint>
+  
+  <transmission name="transmission_arm_dex_hand">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="elbow_forearm_joint">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_arm_dex_hand">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+</robot>

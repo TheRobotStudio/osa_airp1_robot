@@ -1,0 +1,7 @@
+<launch>
+
+	<include file="$(find airp1_foldy_base_apps)/launch/airp1_foldy_base_demo.launch" />	
+	<include file="$(find airp1_sea_arm_apps)/launch/airp1_sea_arm_demo.launch" />
+	<include file="$(find airp1_hand_apps)/launch/airp1_hand_demo.launch" />
+
+</launch>

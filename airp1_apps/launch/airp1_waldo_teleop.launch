@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+
+	<include file="$(find airp1_foldy_base_apps)/launch/airp1_foldy_base_waldo_teleop.launch"/>	
+	<include file="$(find airp1_sea_arm_apps)/launch/airp1_sea_arm_waldo_demo.launch"/>
+
+</launch>

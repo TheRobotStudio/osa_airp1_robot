@@ -1,7 +1,0 @@
-<library path="lib/libr2p_controller_lib">
-	<class name="r2p_controller/R2PControllerClass"
-				 type="r2p_controller::R2PControllerClass"
-				 base_class_type="controller_interface::ControllerBase" />
-</library>
-
-

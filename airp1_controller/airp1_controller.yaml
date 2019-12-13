@@ -1,0 +1,3 @@
+airp1_controller_name:
+  type: airp1_controller/AIRP1ControllerClass
+  joint_name: elbow_pitch_joint
